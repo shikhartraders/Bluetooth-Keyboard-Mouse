@@ -1,0 +1,204 @@
+package com.example.ui
+
+import android.annotation.SuppressLint
+import android.bluetooth.BluetoothAdapter
+import android.bluetooth.BluetoothDevice
+import android.bluetooth.BluetoothHidDevice
+import android.bluetooth.BluetoothHidDeviceAppQosSettings
+import android.bluetooth.BluetoothHidDeviceAppSdpSettings
+import android.bluetooth.BluetoothProfile
+import android.content.Context
+import android.util.Log
+import kotlinx.coroutines.flow.MutableStateFlow
+import java.util.concurrent.Executors
+
+@SuppressLint("MissingPermission")
+class ClassicHidDevice(private val context: Context, private val adapter: BluetoothAdapter?) : BluetoothProfile.ServiceListener {
+    
+    companion object {
+        private const val TAG = "ClassicHidDevice"
+    }
+
+    private var hidDevice: BluetoothHidDevice? = null
+    var connectedDevice: BluetoothDevice? = null
+        private set
+
+    val connectionState = MutableStateFlow(BluetoothProfile.STATE_DISCONNECTED)
+    
+    // Keyboard and Mouse combo report map
+    private val reportMap = byteArrayOf(
+        0x05, 0x01, // Usage Page (Generic Desktop)
+        0x09, 0x02, // Usage (Mouse)
+        0xA1.toByte(), 0x01, // Collection (Application)
+        0x85.toByte(), 0x01, // Report Id (1)
+        0x09, 0x01, // Usage (Pointer)
+        0xA1.toByte(), 0x00, // Collection (Physical)
+        0x05, 0x09, // Usage Page (Button)
+        0x19, 0x01, // Usage Minimum (Button 1)
+        0x29, 0x03, // Usage Maximum (Button 3)
+        0x15, 0x00, // Logical Minimum (0)
+        0x25, 0x01, // Logical Maximum (1)
+        0x95.toByte(), 0x03, // Report Count (3)
+        0x75, 0x01, // Report Size (1)
+        0x81.toByte(), 0x02, // Input (Data, Variable, Absolute)
+        0x95.toByte(), 0x01, // Report Count (1)
+        0x75, 0x05, // Report Size (5)
+        0x81.toByte(), 0x03, // Input (Constant)
+        0x05, 0x01, // Usage Page (Generic Desktop)
+        0x09, 0x30, // Usage (X)
+        0x09, 0x31, // Usage (Y)
+        0x15, 0x81.toByte(), // Logical Minimum (-127)
+        0x25, 0x7F, // Logical Maximum (127)
+        0x75, 0x08, // Report Size (8)
+        0x95.toByte(), 0x02, // Report Count (2)
+        0x81.toByte(), 0x06, // Input (Data, Variable, Relative)
+        0x09, 0x38, // Usage (Wheel)
+        0x15, 0x81.toByte(), // Logical Minimum (-127)
+        0x25, 0x7F, // Logical Maximum (127)
+        0x75, 0x08, // Report Size (8)
+        0x95.toByte(), 0x01, // Report Count (1)
+        0x81.toByte(), 0x06, // Input (Data, Variable, Relative)
+        0xC0.toByte(), // End Collection
+        0xC0.toByte(), // End Collection
+
+        // Keyboard
+        0x05, 0x01, // Usage Page (Generic Desktop)
+        0x09, 0x06, // Usage (Keyboard)
+        0xA1.toByte(), 0x01, // Collection (Application)
+        0x85.toByte(), 0x02, // Report Id (2)
+        0x05, 0x07, // Usage Page (Key Codes)
+        0x19, 0xE0.toByte(), // Usage Minimum (224)
+        0x29, 0xE7.toByte(), // Usage Maximum (231)
+        0x15, 0x00, // Logical Minimum (0)
+        0x25, 0x01, // Logical Maximum (1)
+        0x75, 0x01, // Report Size (1)
+        0x95.toByte(), 0x08, // Report Count (8)
+        0x81.toByte(), 0x02, // Input (Data, Variable, Absolute)
+        0x95.toByte(), 0x01, // Report Count (1)
+        0x75, 0x08, // Report Size (8)
+        0x81.toByte(), 0x03, // Input (Constant)
+        0x95.toByte(), 0x06, // Report Count (6)
+        0x75, 0x08, // Report Size (8)
+        0x15, 0x00, // Logical Minimum (0)
+        0x25, 0x65, // Logical Maximum (101)
+        0x05, 0x07, // Usage Page (Key Codes)
+        0x19, 0x00, // Usage Minimum (0)
+        0x29, 0x65, // Usage Maximum (101)
+        0x81.toByte(), 0x00, // Input (Data, Array)
+        0xC0.toByte() // End Collection
+    )
+
+    private val callback = object : BluetoothHidDevice.Callback() {
+        override fun onAppStatusChanged(pluggedDevice: BluetoothDevice?, registered: Boolean) {
+            super.onAppStatusChanged(pluggedDevice, registered)
+            Log.d(TAG, "onAppStatusChanged: registered=$registered, device=$pluggedDevice")
+        }
+
+        override fun onConnectionStateChanged(device: BluetoothDevice?, state: Int) {
+            super.onConnectionStateChanged(device, state)
+            Log.d(TAG, "onConnectionStateChanged: state=$state")
+            if (state == BluetoothProfile.STATE_CONNECTED) {
+                connectedDevice = device
+                connectionState.value = state
+            } else if (state == BluetoothProfile.STATE_DISCONNECTED) {
+                if (connectedDevice?.address == device?.address) {
+                    connectedDevice = null
+                    connectionState.value = state
+                }
+            }
+        }
+    }
+
+    fun start() {
+        adapter?.getProfileProxy(context, this, BluetoothProfile.HID_DEVICE)
+    }
+
+    fun stop() {
+        hidDevice?.unregisterApp()
+        adapter?.closeProfileProxy(BluetoothProfile.HID_DEVICE, hidDevice)
+        hidDevice = null
+    }
+
+    override fun onServiceConnected(profile: Int, proxy: BluetoothProfile?) {
+        if (profile == BluetoothProfile.HID_DEVICE) {
+            hidDevice = proxy as BluetoothHidDevice
+            val sdp = BluetoothHidDeviceAppSdpSettings(
+                "Bluetooth Keyboard/Mouse",
+                "Mobile Input Device",
+                "Android",
+                BluetoothHidDevice.SUBCLASS1_COMBO,
+                reportMap
+            )
+            val qos = BluetoothHidDeviceAppQosSettings(
+                BluetoothHidDeviceAppQosSettings.SERVICE_BEST_EFFORT,
+                800,
+                9,
+                0,
+                11250,
+                BluetoothHidDeviceAppQosSettings.MAX_AVAILABLE
+            )
+            try {
+                hidDevice?.registerApp(sdp, null, qos, Executors.newSingleThreadExecutor(), callback)
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to register app: ${e.message}")
+            }
+        }
+    }
+
+    override fun onServiceDisconnected(profile: Int) {
+        if (profile == BluetoothProfile.HID_DEVICE) {
+            hidDevice = null
+        }
+    }
+
+    fun connect(device: BluetoothDevice) {
+        try {
+            hidDevice?.connect(device)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to connect: ${e.message}")
+        }
+    }
+
+    fun disconnect() {
+        connectedDevice?.let {
+            hidDevice?.disconnect(it)
+        }
+    }
+
+    fun sendMouseReport(dx: Int, dy: Int, leftClick: Boolean, rightClick: Boolean, wheel: Int) {
+        if (connectedDevice == null || hidDevice == null) return
+        var buttons = 0
+        if (leftClick) buttons = buttons or 1
+        if (rightClick) buttons = buttons or 2
+        
+        val report = byteArrayOf(
+            buttons.toByte(),
+            dx.toByte(),
+            dy.toByte(),
+            wheel.toByte()
+        )
+        
+        try {
+            hidDevice?.sendReport(connectedDevice, 1, report)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to send mouse report: ${e.message}")
+        }
+    }
+    
+    fun sendKeyboardReport(modifier: Byte, keycode: Byte) {
+        if (connectedDevice == null || hidDevice == null) return
+        
+        val report = byteArrayOf(
+            modifier,
+            0, // Reserved
+            keycode,
+            0, 0, 0, 0, 0 // Extra keys
+        )
+        
+        try {
+            hidDevice?.sendReport(connectedDevice, 2, report)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to send keyboard report: ${e.message}")
+        }
+    }
+}
