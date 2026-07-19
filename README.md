@@ -1,34 +1,40 @@
 <div align="center">
 
-<img src="https://spsproduction.shikharps.in/web/image/918-bd81a0d0/1000067299.webp" width="100%" alt="Bluetooth Keyboard & Mouse Banner"/>
+<img src="https://spsproduction.shikharps.in/web/image/918-bd81a0d0/1000067299.webp" width="100%" alt="Bluetooth Keyboard & Mouse Banner">
 
 # ⌨️ Bluetooth Keyboard & Mouse
 
-### 🚀 Transform Your Android Phone into a Wireless Bluetooth Keyboard & Mouse
+### 🚀 Turn Your Android Phone into a Powerful Wireless Bluetooth Keyboard, Mouse & Touchpad
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=26&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=800&lines=Free+Bluetooth+Keyboard+%26+Mouse;Control+PC+%7C+Laptop+%7C+Smart+TV;No+Ads+%7C+Open+Source;Fast+%7C+Secure+%7C+Low+Latency" />
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=28&duration=3000&pause=1200&color=00BFFF&center=true&vCenter=true&width=850&lines=Bluetooth+Keyboard+%26+Mouse;Control+Your+PC+Wirelessly;Free+%7C+Open+Source+%7C+Material+Design;Windows+%7C+Linux+%7C+macOS+%7C+Android+TV;Developed+by+Shikhar+Pandey" />
+</p>
 
 <p align="center">
 
 <a href="https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse/releases/latest">
-<img src="https://img.shields.io/badge/⬇️_Download_APK-0A84FF?style=for-the-badge&logo=android&logoColor=white"/>
+<img src="https://img.shields.io/badge/⬇️%20Download%20APK-Latest%20Release-00C853?style=for-the-badge&logo=android&logoColor=white">
 </a>
 
 <a href="https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse">
-<img src="https://img.shields.io/github/stars/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge">
 </a>
 
 <a href="https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse/fork">
-<img src="https://img.shields.io/github/forks/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge"/>
+<img src="https://img.shields.io/github/forks/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge">
 </a>
 
 <a href="https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse/issues">
-<img src="https://img.shields.io/github/issues/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge"/>
+<img src="https://img.shields.io/github/issues/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge">
+</a>
+
+<a href="LICENSE">
+<img src="https://img.shields.io/github/license/shikhartraders/Bluetooth-Keyboard-Mouse?style=for-the-badge">
 </a>
 
 </p>
 
-### ⭐ A completely FREE, modern and open-source Android application that converts your smartphone into a Bluetooth Keyboard & Mouse.
+### ⭐ Free • Open Source • Secure • Fast • Modern
 
 Made with ❤️ by **Shikhar Pandey**
 
@@ -38,18 +44,21 @@ Made with ❤️ by **Shikhar Pandey**
 
 # 📖 About
 
-Bluetooth Keyboard & Mouse is a premium-quality Android application designed to transform your phone into a fully functional Bluetooth input device.
+Bluetooth Keyboard & Mouse is a premium Android application that transforms your smartphone into a complete Bluetooth input device.
 
-Whether you're working from home, giving presentations, watching movies, or controlling your Smart TV from the couch, this app provides a fast, secure, and smooth Bluetooth experience without requiring extra hardware.
+Whether you're working, studying, gaming, watching movies, or giving presentations, this app allows you to control your computer or Smart TV wirelessly with an elegant Material Design interface.
 
-Unlike many alternatives, this app is:
+Unlike many similar applications, this project is:
 
 - ✅ Completely FREE
-- ✅ No Advertisements
 - ✅ Open Source
-- ✅ Fast Connection
-- ✅ Beautiful Material Design UI
-- ✅ Lightweight & Battery Efficient
+- ✅ No Advertisements
+- ✅ Lightweight
+- ✅ Battery Efficient
+- ✅ Material Design 3
+- ✅ Secure Bluetooth Communication
+- ✅ Modern UI
+- ✅ Low Latency
 
 ---
 
@@ -57,54 +66,75 @@ Unlike many alternatives, this app is:
 
 ## ⌨️ Bluetooth Keyboard
 
-- Full QWERTY Keyboard
-- Function Keys (F1–F12)
-- Arrow Keys
-- ESC
-- CTRL
-- ALT
-- SHIFT
-- Windows Key
-- Caps Lock
-- Number Pad
-- Emoji Support
-- Shortcut Keys
+✔ Full QWERTY Layout
+
+✔ Function Keys
+
+✔ Arrow Keys
+
+✔ Modifier Keys
+
+✔ Windows Key
+
+✔ Emoji Support
+
+✔ Shortcut Keys
+
+✔ Fast Typing
 
 ---
 
-## 🖱️ Bluetooth Mouse
+## 🖱️ Wireless Mouse
 
-- Smooth Cursor Movement
-- Left Click
-- Right Click
-- Middle Click
-- Double Click
-- Drag & Drop
-- Adjustable Cursor Speed
+✔ Smooth Cursor
+
+✔ Left Click
+
+✔ Right Click
+
+✔ Middle Click
+
+✔ Drag & Drop
+
+✔ Cursor Speed Control
+
+✔ Responsive Tracking
 
 ---
 
-## 👆 Touchpad
+## 👆 Precision Touchpad
 
-- Multi-touch Gestures
-- Two Finger Scroll
-- Tap to Click
-- Long Press
-- Drag Gesture
-- Natural Scrolling
+✔ Multi-touch Gestures
+
+✔ Tap to Click
+
+✔ Two Finger Scroll
+
+✔ Long Press
+
+✔ Drag Gesture
+
+✔ Natural Scrolling
 
 ---
 
 ## 🎵 Multimedia Controls
 
-- Play
-- Pause
-- Next Track
-- Previous Track
-- Stop
-- Volume Up
-- Volume Down
-- Mute
+✔ Play
+
+✔ Pause
+
+✔ Previous
+
+✔ Next
+
+✔ Volume Up
+
+✔ Volume Down
+
+✔ Mute
+
+✔ Stop
 
 ---
 
@@ -114,104 +144,149 @@ Perfect for
 
 - Microsoft PowerPoint
 - Google Slides
-- Canva Presentation
+- Canva
 - PDF Reader
-- Online Meetings
-
-Controls include
-
-- Next Slide
-- Previous Slide
-- Laser Pointer
-- Volume
-- Fullscreen
+- Meetings
 
 ---
 
-## 📺 Smart TV Support
+## 🔢 Numeric Keypad
 
-Compatible with
+Dedicated Number Pad
 
-- Android TV
-- Google TV
-- Smart TVs
-- Streaming Devices
-- TV Boxes
+Fast Number Entry
+
+Calculator Friendly
+
+Spreadsheet Friendly
 
 ---
 
-## 💻 Computer Support
+## 💻 Full PC Keyboard
+
+Supports
+
+- ESC
+- TAB
+- CTRL
+- ALT
+- SHIFT
+- WINDOWS
+- CAPS LOCK
+- DELETE
+- INSERT
+- HOME
+- END
+- PAGE UP
+- PAGE DOWN
+- Function Keys
+
+---
+
+# 📱 Compatibility
 
 Works with
 
-- Windows 10
-- Windows 11
-- macOS
-- Linux
-- ChromeOS
+✅ Windows
+
+✅ Linux
+
+✅ macOS
+
+✅ Android TV
+
+✅ Google TV
+
+✅ Smart TV
+
+✅ Tablets
 
 ---
 
-## 🔒 Security
+# ⚡ Performance
 
-- Secure Bluetooth Pairing
-- No Data Collection
-- Local Communication
-- Safe Device Authentication
+• Ultra Low Latency
 
----
+• Fast Bluetooth Pairing
 
-## ⚡ Performance
+• Stable Connection
 
-- Ultra Low Latency
-- Fast Bluetooth Connection
-- Optimized Battery Usage
-- Stable Connection
-- Smooth Cursor Rendering
+• Smooth Cursor
+
+• Battery Optimized
+
+• Secure Communication
 
 ---
 
-# 📱 Screenshots
+# 📸 Screenshots
 
-> Coming Soon
+## 🖱️ Mouse
+
+<img src="https://spsproduction.shikharps.in/web/image/924-686494db/1000067479.webp" width="300"/>
+
+Control your computer with a smooth and responsive wireless touchpad and mouse.
 
 ---
 
-# 🚀 How to Use
+## 🎵 Multimedia Controller
+
+<img src="https://spsproduction.shikharps.in/web/image/925-bc5d87bb/1000067480.webp" width="300"/>
+
+Quickly control music, videos and presentations using multimedia shortcuts.
+
+---
+
+## 🔢 Numeric Keypad
+
+<img src="https://spsproduction.shikharps.in/web/image/926-07840505/1000067470.webp" width="300"/>
+
+Perfect for spreadsheets, accounting and calculator input.
+
+---
+
+## 💻 Full PC Keyboard
+
+<img src="https://spsproduction.shikharps.in/web/image/927-404df0bf/1000067487.webp" width="300"/>
+
+A complete desktop keyboard experience directly from your Android phone.
+
+---
+
+# 🚀 How To Use
 
 ## Step 1
 
-Install the application on your Android device.
+Install the application.
 
 ---
 
 ## Step 2
 
-Enable Bluetooth on both your phone and computer.
+Enable Bluetooth.
 
 ---
 
 ## Step 3
 
-Pair your computer with your Android phone.
+Pair your phone with your computer.
 
 ---
 
 ## Step 4
 
-Open the app.
+Launch Bluetooth Keyboard & Mouse.
 
 ---
 
 ## Step 5
 
-Choose one of the available modes:
+Select your preferred mode
 
 - Keyboard
 - Mouse
-- Touchpad
-- Media Remote
-- Presentation
+- Multimedia
+- Numeric Keypad
 
 ---
 
@@ -229,7 +304,7 @@ Start controlling your device wirelessly.
 
 <a href="https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse/releases/latest">
 
-<img src="https://img.shields.io/badge/⬇️_DOWNLOAD_LATEST_APK-00C853?style=for-the-badge&logo=android&logoColor=white"/>
+<img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20APK-00C853?style=for-the-badge&logo=android&logoColor=white">
 
 </a>
 
@@ -237,22 +312,32 @@ Start controlling your device wirelessly.
 
 ---
 
+# 🎥 Demo
+
+> Demo GIF Coming Soon
+
+---
+
 # 🛠️ Tech Stack
 
-- Kotlin
-- Android SDK
-- Material Design 3
-- Bluetooth HID
-- Android Jetpack
-- Coroutines
-- ViewModel
-- Navigation Component
+This project is built using modern Android technologies to ensure speed, stability, and scalability.
+
+| Technology | Purpose |
+|------------|---------|
+| Kotlin | Primary Programming Language |
+| Android SDK | Native Android Development |
+| Material Design 3 | Modern UI Components |
+| Bluetooth HID | Wireless Keyboard & Mouse Communication |
+| Jetpack Compose / XML | UI Development |
+| ViewModel | Lifecycle Management |
+| Coroutines | Background Tasks |
+| Gradle | Build System |
 
 ---
 
 # 📦 Installation
 
-Clone the repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse.git
@@ -260,15 +345,158 @@ git clone https://github.com/shikhartraders/Bluetooth-Keyboard-Mouse.git
 
 Open Android Studio
 
-Run
+```text
+File
+ └── Open
+      └── Bluetooth-Keyboard-Mouse
+```
+
+Click **Run ▶**
+
+---
+
+# 📲 Build APK
 
 ```bash
 ./gradlew assembleDebug
 ```
 
-Install APK
+Release APK
 
-Enjoy 🎉
+```bash
+./gradlew assembleRelease
+```
+
+---
+
+# 📁 Project Structure
+
+```
+Bluetooth-Keyboard-Mouse
+│
+├── app/
+├── assets/
+├── screenshots/
+├── bluetooth/
+├── ui/
+├── keyboard/
+├── mouse/
+├── multimedia/
+├── numpad/
+├── utils/
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 🔒 Privacy
+
+Bluetooth Keyboard & Mouse respects your privacy.
+
+✅ No Ads
+
+✅ No Tracking
+
+✅ No Analytics
+
+✅ No Personal Data Collection
+
+✅ No Hidden Background Services
+
+All Bluetooth communication happens directly between your Android device and the paired computer.
+
+---
+
+# 🛡️ Security
+
+Security is one of our highest priorities.
+
+✔ Secure Bluetooth Pairing
+
+✔ Local Device Communication
+
+✔ Safe Permissions
+
+✔ Material Security Guidelines
+
+✔ Modern Android APIs
+
+---
+
+# 📈 Performance
+
+Bluetooth Keyboard & Mouse is optimized for speed.
+
+⚡ Fast Connection
+
+⚡ Smooth Cursor
+
+⚡ Instant Typing
+
+⚡ Low Battery Consumption
+
+⚡ Low Memory Usage
+
+⚡ Minimal CPU Usage
+
+---
+
+# 🌟 Why Choose This App?
+
+✔ Completely Free
+
+✔ Beautiful Material Design
+
+✔ Open Source
+
+✔ Lightweight
+
+✔ No Advertisements
+
+✔ Fast Bluetooth Pairing
+
+✔ Responsive Mouse
+
+✔ Modern Keyboard
+
+✔ Numeric Keypad
+
+✔ Multimedia Controller
+
+✔ Actively Maintained
+
+---
+
+# 🗺️ Roadmap
+
+## Version 1.1
+
+- [ ] Dark Theme Improvements
+- [ ] Better Bluetooth Stability
+- [ ] More Keyboard Layouts
+- [ ] Improved Mouse Sensitivity
+
+---
+
+## Version 1.2
+
+- [ ] Voice Commands
+- [ ] AI Assistant
+- [ ] Gesture Controls
+- [ ] Gaming Mode
+
+---
+
+## Version 2.0
+
+- [ ] File Sharing
+- [ ] Clipboard Sync
+- [ ] Cloud Backup
+- [ ] Wear OS Support
+- [ ] Multi Device Switching
+- [ ] Custom Themes
+- [ ] RGB Keyboard Effects
 
 ---
 
@@ -276,67 +504,127 @@ Enjoy 🎉
 
 Contributions are always welcome.
 
-1. Fork Repository
+## Step 1
 
-2. Create Branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit
-
-```bash
-git commit -m "Added New Feature"
-```
-
-4. Push
-
-```bash
-git push origin feature-name
-```
-
-5. Create Pull Request
+Fork this repository.
 
 ---
 
-# 🌟 Roadmap
+## Step 2
 
-- AI Voice Commands
-- Gesture Controls
-- Gaming Mode
-- Bluetooth File Transfer
-- Custom Keyboard Themes
-- Macro Keys
-- RGB Effects
-- Dark Mode
-- Cloud Sync
-- Multi Device Support
-- Wear OS Support
+Create your branch.
+
+```bash
+git checkout -b feature/AmazingFeature
+```
 
 ---
 
-# ❤️ Support
+## Step 3
 
-If you enjoy this project
+Commit your changes.
 
-⭐ Star the repository
+```bash
+git commit -m "Added Amazing Feature"
+```
 
-🍴 Fork it
+---
 
-🐛 Report bugs
+## Step 4
 
-💡 Suggest new features
+Push your branch.
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+---
+
+## Step 5
+
+Open a Pull Request.
+
+---
+
+# 🐞 Report Bugs
+
+Found a bug?
+
+Please open a GitHub Issue with:
+
+- Device Name
+- Android Version
+- Steps to Reproduce
+- Screenshots
+- Logs (Optional)
+
+---
+
+# 💡 Feature Requests
+
+Have an idea?
+
+Create a Feature Request in GitHub Issues.
+
+We love community feedback ❤️
+
+---
+
+# ⭐ Support the Project
+
+If this project helped you,
+
+please consider:
+
+⭐ Star the Repository
+
+🍴 Fork the Repository
+
+📢 Share with Friends
+
+🐛 Report Bugs
+
+💡 Suggest Features
+
+Every star motivates future development.
+
+---
+
+# 📊 Repository Statistics
+
+<p align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=shikhartraders&show_icons=true&theme=tokyonight"/>
+
+<br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=shikhartraders&theme=tokyonight"/>
+
+<br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shikhartraders&theme=tokyo-night"/>
+
+</p>
 
 ---
 
 # 👨‍💻 Developer
 
-## Shikhar Pandey
+<div align="center">
 
-AI Developer • Android Developer • Open Source Enthusiast
+# Shikhar Pandey
 
-🌐 Website
+### AI Developer • Android Developer • Open Source Enthusiast
+
+Building innovative Android applications, AI-powered solutions, and modern software experiences.
+
+</div>
+
+---
+
+## 🌐 Connect With Me
+
+🏠 Website
 
 https://www.shikharps.in
 
@@ -348,22 +636,69 @@ https://spsproduction.shikharps.in
 
 https://github.com/shikhartraders
 
+💼 LinkedIn
+
+https://www.linkedin.com/in/shikharpandey-sp
+
 📸 Instagram
 
 https://instagram.com/shikhar.xe
 
-💼 LinkedIn
+▶️ YouTube
 
-https://linkedin.com/in/shikharpandey-sp
+https://youtube.com/@shikhartraders01
+
+🐦 X (Twitter)
+
+https://x.com/ShikharPandeyHQ
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+✅ Use
+
+✅ Modify
+
+✅ Distribute
+
+✅ Learn
+
+Please include the original license when redistributing.
+
+---
+
+# ❤️ Acknowledgements
+
+Special thanks to:
+
+- Android Developers
+- Open Source Community
+- Kotlin Team
+- Material Design Team
+- GitHub
+- Everyone who stars and contributes to this project.
 
 ---
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=shikhartraders&theme=github-compact"/>
+## ⭐ If you found this repository helpful,
 
-### ⭐ If you like this project, give it a Star!
+# Please give it a Star ⭐
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=22&duration=2500&pause=800&color=00C2FF&center=true&vCenter=true&width=650&lines=Thanks+for+visiting!;Happy+Coding!;Made+with+❤️+by+Shikhar+Pandey"/>
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=24&duration=2500&pause=1200&color=00BFFF&center=true&vCenter=true&width=650&lines=Thank+You+for+Visiting!;Happy+Coding!;Made+with+❤️+by+Shikhar+Pandey;See+You+Again!"/>
+
+---
+
+### 🚀 Bluetooth Keyboard & Mouse
+
+**Free • Open Source • Modern • Secure**
+
+Made with ❤️ by **Shikhar Pandey**
 
 </div>
